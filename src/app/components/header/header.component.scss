@@ -1,0 +1,30 @@
+.menu {
+   
+    color:#01AFC8;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+
+  }
+  button{
+   margin-right: 0.5%;
+   width: 15vw;
+   height: 6vh;
+   border-radius: 5px;
+   color: #fff;
+   background-color: #87CEEB;
+   border: none;
+   cursor: pointer;
+  }
+  .logo{
+    background-image: url("../../../assets/logo.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+
+    width: 6%;
+    height: 70%;
+  }
+  .nav{
+    margin-top: 3vh;
+  }

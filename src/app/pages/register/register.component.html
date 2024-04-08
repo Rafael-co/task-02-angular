@@ -1,0 +1,19 @@
+<div class="login-container bg-white">
+  <form #FormEdit="ngForm" >
+      <h1 style="margin-top: 0;">Register</h1>
+      <mat-form-field appearance="outline" class="form" >
+          <mat-label>E-mail</mat-label>
+          <input type="email" matInput placeholder="E-mail"name = "email" [(ngModel)] = "cadastro.email" required email >
+      </mat-form-field>
+      <mat-form-field appearance="outline"class="form">
+          <mat-label>Senha</mat-label>
+          <input type="password" matInput placeholder="Senha" name = "senha"[(ngModel)] = "cadastro.password" required minlength="6">
+      </mat-form-field>
+      <button type="submit"  class="button__login" (click)="register(FormEdit)">
+          registrar
+      </button>
+      
+
+  </form>
+
+</div>

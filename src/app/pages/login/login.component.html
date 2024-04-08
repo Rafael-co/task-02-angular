@@ -1,0 +1,19 @@
+<div class="login-container bg-white">
+    <form [formGroup]="formLogin" >
+        <h1 style="margin-top: 0;">Login</h1>
+        <mat-form-field appearance="outline" class="form">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput placeholder="E-mail" formControlName="email" >
+        </mat-form-field>
+        <mat-form-field appearance="outline"class="form">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput placeholder="Senha"formControlName="password" >
+        </mat-form-field>
+        <button type="submit"  class="button__login" (click)="login()">
+            Entrar
+        </button>
+        
+        <span class="cadastro">Ainda não é cadastrado?<button routerLink="register" class="registre">Clique aqui</button></span>
+    </form>
+  
+</div>

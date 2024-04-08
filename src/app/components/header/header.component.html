@@ -1,0 +1,15 @@
+<nav>
+    <mat-toolbar class="menu">
+      <div class="logo"></div>
+      <span>Conselhos the cat</span>
+      <section>
+        <button mat-raised-button routerLink="/" color="menu" >Home</button>
+        <button mat-raised-button routerLink="/advices" color="menu" >conselhos</button>
+        <button mat-raised-button routerLink="/register"color="menu" >registre-se</button>
+        <button mat-raised-button routerLink="/login" color="menu" *ngIf="isLogado" >Login</button>
+        <button mat-raised-button routerLink="/login" color="menu" *ngIf="!isLogado" >logout</button>
+      
+      </section>
+      
+    </mat-toolbar>
+    </nav>
